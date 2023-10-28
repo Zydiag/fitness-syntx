@@ -8,8 +8,6 @@ const fetcher = (url) =>
       'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
     },
   }).then((res) => {
-    console.log(process.env);
-    console.log(res);
     return res.json();
   });
 

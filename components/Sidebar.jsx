@@ -35,19 +35,19 @@ const Sidebar = () => {
     return null;
   }
   return (
-    <nav className="bg-gradient-to-l from-light to-accent border-x-2  rounded-e-lg  min-h-screen w-56">
+    <nav className="bg-gradient-to-l from-secondary to-[#1B2021] text-white border-x-2  rounded-e-lg  min-h-screen w-56">
       <div className="flex flex-col gap-10 p-3   h-full">
-        <div className="logo flex  items-center">
+        <Link href='/' className="logo flex  items-center">
           <Image src={image} width={50} height={50} className="" alt="" />
           <div className="text-3xl font-bold">FitMe</div>
-        </div>
+        </Link>
         {navLinks.map((link) => {
           return (
             <Link
               key={link.title}
               className={`${
                 path === link.path ? 'bg-gradient-to-r from-accent to-light  shadow shadow-primary' : ''
-              }  py-5 pl-5 flex items-center justify-start gap-6 hover:shadow  hover:shadow-primary rounded-md `}
+              }  py-5 pl-5 flex items-center justify-start gap-6 hover:shadow  hover:shadow-primary rounded-md transition-all duration-300 hover:scale-105 hover:transition-all`}
               href={link.path}
             >
               <link.icon className="text-2xl" />
