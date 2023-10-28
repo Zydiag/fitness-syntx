@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${poppins.className}  bg-primary grid min-h-screen grid-cols-[auto_1fr] justify-center gap-4 `}
+        className={` ${poppins.className}  bg-secondary from-secondary to-primary grid min-h-screen grid-cols-[auto_1fr] justify-center gap-4 `}
       >
         <Sidebar />
         {children}
