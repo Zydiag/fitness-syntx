@@ -3,12 +3,10 @@
 import useSWR from 'swr';
 import Image from 'next/image';
 import fetcher from '@/utils/fetcher';
-import Input from '@/components/Input';
 import Dropdown from '@/components/Dropdown';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { mydata } from '@/utils/data';
 import { useFetch } from '@/hooks/useFetch';
-import { redirect } from 'next/dist/server/api-utils';
 
 const Workout = () => {
   const [muscleType, setMuscleType] = useState('');
